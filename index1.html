@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospect Form - BookTrust</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href=""><img src="./images/btlogo.png" alt="Site Name" /></a>
+        <section class="text_message">
+        <div class="message">
+            <p><em>Thank you for your interest in partnering with Book Trust!</em></p>
+            <p><em>For more than 20 years, Book Trust has partnered with hundreds of schools and districts across the United States to promote student book choice and ownership, while supporting teachers as they facilitate joyful reading experiences in their classrooms. Book Trust offers schools developmentally and culturally relevant print book options for Pre-K through Grade 5 students at a fraction of the cost to schools—and at no cost to students or their families—through a collaboration with the world’s largest publisher and distributor of children’s books. Learn more at <a href="https://booktrust.org/" target="_blank">booktrust.org</a>.</em></p>
+        <p><em>Applications have closed for the 2024-2025 school year. The application for the 2025-2026 Program Year will become available in early 2025. To receive the application in early 2025, please complete the form below.</em></p>
+        <p><em>If you have any questions, please reach out to us at <a href="mailto:support@booktrust.org" target="_blank">support@booktrust.org</a>.</em></p>
+    </div>
+</section>
+  </div>  
+    </header>
+    <section class="intrest_form">
+    <h1 class="title">Application Request Form</h1>  
+    <div class="container mt-5">
+     <p><span>*</span> Indicates required fields</p>    
+    <form class="needs-validation"  action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHs000001vNkK" method="POST">
+    <input type=hidden name="oid" value="00DHs000001vNkK">
+    <input type=hidden name="retURL" value="https://booktrust.org/"        
+ 
+    <div class="mb-3">
+        <label class="form-label" for="first_name"><span>*</span> First Name</label>
+    <input class="form-control" id="first_name" maxlength="80" name="first_name" size="20" type="text" placeholder="Enter Your First Name" required/><br>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="last_name"><span>*</span> Last Name</label>
+    <input class="form-control" id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Enter Your Last Name" required/><br>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="email"><span>*</span> Email</label>
+    <input class="form-control" id="email" maxlength="80" name="email" size="20" type="email" placeholder="Enter Your Email"  required/><br>
+    </div>
+    <div class="mb-3">
+        <label class="form-label"  for="00NVt000000NmDd"><span>*</span> State </label>
+    <select class="form-control" id="00NVt000000NmDd" name="00NVt000000NmDd" title="Provide your School State Name?" onchange="handlerAssociate()" required><option value="">--None--</option>
+    </option><option value="Arizona">Arizona</option>
+    <option value="California">California</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Delaware">Delaware</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Hawaii">Hawaii</option>
+    <option value="Idaho">Idaho</option>
+    <option value="Illinois">Illinois</option>
+    <option value="Iowa">Iowa</option>
+    <option value="Kentucky">Kentucky</option>
+    <option value="Maine">Maine</option>
+    <option value="Massachusetts">Massachusetts</option>
+    <option value="Michigan">Michigan</option>
+    <option value="Minnesota">Minnesota</option>
+    <option value="Missouri">Missouri</option>
+    <option value="Nebraska">Nebraska</option>
+    <option value="New York">New York</option>
+    <option value="Oklahoma">Oklahoma</option>
+    <option value="Pennsylvania">Pennsylvania</option>
+    <option value="South Carolina">South Carolina</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Texas">Texas</option>
+    <option value="Utah">Utah</option>
+    <option value="Virginia">Virginia</option>
+    <option value="Washington">Washington</option>
+    <option value="Wisconsin">Wisconsin</option>
+    <option value="Wyoming">Wyoming</option>
+    </select><br>
+    </div>
+ 
+    <div class="mb-3">
+        <label class="form-label"  for="00NVt000000Nm3x"><span>*</span> Are you associated with a School, District, Organization, or Other?</label>
+    <select class="form-control"  id="00NVt000000Nm3x" name="00NVt000000Nm3x" title="Associated" onchange="handlerAssociate()" required><option value="">--None--</option><option value="School">School</option>
+    <option value="District">District</option>
+    <option value="Organization">Organization</option>
+    <option value="Other">Other</option>
+    </select><br>
+    </div>
+    <div class="mb-3" id="istitle">
+        <label   for="00NVt000000Nm5Z">Is your School Title 1</label>
+    <input   id="00NVt000000Nm5Z" name="00NVt000000Nm5Z" type="checkbox" value="1" /><br>
+   
+    </div>
+    <div class="mb-3" id="supportTitle">
+        <label  for="00NVt000000Nlkc">Do you support Title 1 Schools?</label>
+    <input  id="00NVt000000Nlkc" name="00NVt000000Nlkc" type="checkbox" value="1" /><br>
+   
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="00NVt000000NmGr"><span>*</span> What is your role?</label>
+    <select class="form-control"  id="00NVt000000NmGr" name="00NVt000000NmGr" title="Role" onchange="handlerRole()" required>
+    <option value="">--None--</option>
+    <option value="Principal">Principal</option>
+    <option value="Teacher">Teacher</option>
+    <option value="Parent">Parent</option>
+    <option value="District Leader">District Leader</option>
+    <option value="Other">Other</option>
+    </select><br>
+    </div>
+    <div class="mb-3" id="OtherRole">
+        <label class="form-label"  for="00NVt000000Nm7B"><span>*</span> Other Role:</label>
+    <input class="form-control" id="00NVt000000Nm7B" maxlength="80" name="00NVt000000Nm7B" size="20" type="text"/><br>
+    </div>
+ 
+    <div class="mb-3">
+        <label class="form-label" for="company"><span>*</span>Please provide the name of the institution you’re representing (eg. School Name, School District Name, Organization Name)</label>
+    <input id="company" class="form-control" maxlength="40" name="company" size="20" type="text"  required/><br>
+                </div>
+    <div class="mb-3">
+        <label class="form-label"  for="00NVt000000NmC1">If you represent a School, please also provide the name of your School District.</label>
+            <textarea class="form-control"  id="00NVt000000NmC1" name="00NVt000000NmC1" type="text" wrap="soft"></textarea><br>
+            </div>
+   
+    <div class="mb-3" id="00NVt000000NnRR">
+        <label class="form-label"  for="00NVt000000NnRR"><span>*</span> How did you find out about Book Trust? </label>
+    <select class="form-control" id="00NVt000000NnRR" name="00NVt000000NnRR" title="How did you find out about Book Trust type"text"/><br>
+    <option value="">--None--</option><option value="Search Engine(Google,Bing,etc)">Search Engine(Google,Bing,etc)</option>
+<option value="Recommended by friend or colleague">Recommended by a friend or colleague</option>
+<option value="Social Media">Social Media</option>
+<option value="Blog or Publication">Blog or Publication</option>
+<option value="Previously partnered with Book Trust">Previously partnered with Book Trust</option>
+<option value="Other">Other</option>
+</select><br>
+</div>
+<div class="mb-3">
+    <label class="form-label"  for="00NVt000000NmK5">Please provide any additional detail on where you learned about Book Trust.</label>
+<textarea class="form-control" id="00NVt000000NmK5" name="00NVt000000NmK5" rows="3" type="text" wrap="soft"></textarea><br>
+</div>
+           
+    <div class="mb-3">
+        <label class="form-label"  for="00NVt000000NmAP">Interest in Program for which School Year</label>
+    <select class="form-control" onchange="handlerFunction()" id="00NVt000000NmAP" multiple="multiple" name="00NVt000000NmAP" title="Program Year">
+    <option value="2024-25">2024-25</option>
+    <option value="2025-26">2025-26</option>
+    <option value="2026-27">2026-27</option>
+    <option value="2027-28">2027-28</option>
+    <option value="2028-29">2028-29</option>
+    <option value="2029-30">2029-30</option>
+    <option value="2030-31">2030-31</option>
+    <option value="2031-32">2031-32</option>
+    <option value="2032-33">2032-33</option>
+    <option value="2033-34">2033-34</option>
+    <option value="2034-35">2034-35</option>
+    </select><br>
+    </div>
+    <div class="mb-3">
+        <label for="00NVt000000NmFF"> Recognition of <a href="https://booktrust.org/apptools/#eligibility" target="_blank"> eligibility requirements</a></label>
+    <input id="00NVt000000NmFF" name="00NVt000000NmFF" type="checkbox" value="1" /><br>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="00NVt000000Nm2L">Is there anything else you would like to share?</label>
+    <textarea class="form-control" id="00NVt000000Nm2L" name="00NVt000000Nm2L" rows="3" type="text" wrap="soft"></textarea><br>
+    </div>    
+   
+    <input type="submit" name="submit" class="btn btn-primary">
+   
+    </form>
+</div>
+</section>
+<!-- Bootstrap JS (optional, but may be needed for certain components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script>
+<script src="form.js"></script>
+ 
+</body>
+</html>
